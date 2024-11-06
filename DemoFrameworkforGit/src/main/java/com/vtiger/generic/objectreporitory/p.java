@@ -1,15 +1,26 @@
 package com.vtiger.generic.objectreporitory;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class p {
+WebDriver driver;
 	
-	@FindBy(xpath="//a[text()='Sign']")
-	private WebElement signout;
-
-	public WebElement getSignout() {
-		return signout;
+	public p(WebDriver driver)
+	{
+		this.driver=driver;
+		PageFactory.initElements(driver,this);
 	}
+	
+	@FindBy(xpath="//a[text()='Sign Ou']")
+	private WebElement element;
+	
+	@FindBy(xpath="//a[text()='Sign Out']")
+	private WebElement element12;
+   
+
+
 
 }

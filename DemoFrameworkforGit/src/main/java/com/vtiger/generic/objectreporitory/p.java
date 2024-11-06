@@ -14,11 +14,13 @@ WebDriver driver;
 		PageFactory.initElements(driver,this);
 	}
 	
-	@FindBy(xpath="//a[text()='Sign Ou']")
-	private WebElement element;
 	
 	@FindBy(xpath="//a[text()='Sign Out']")
-	private WebElement element12;
+	private WebElement element10;
+
+	public WebElement getElement10() {
+		return element10;
+	}
    
 
 

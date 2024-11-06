@@ -6,7 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class p {
-WebDriver driver;
+	
+	WebDriver driver;
 	
 	public p(WebDriver driver)
 	{
@@ -24,5 +25,10 @@ WebDriver driver;
    
 
 
+	@FindBy(xpath="//a[text()='Sign']")
+	private WebElement signout;
+
+	
 
 }
+

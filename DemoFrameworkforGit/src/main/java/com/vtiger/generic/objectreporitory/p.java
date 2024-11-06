@@ -5,11 +5,14 @@ import org.openqa.selenium.support.FindBy;
 
 public class p {
 	
-	@FindBy(xpath="//a[text()='Sign']")
-	private WebElement signout;
-
 	public WebElement getSignout() {
 		return signout;
 	}
 
+	@FindBy(xpath="//a[text()='Sign']")
+	private WebElement signout;
+
+	
+
 }
+
